@@ -7,11 +7,13 @@ inputs:
   newvalue:
     description: The new value of the repository variable.
     type: string
-runs-on: ubuntu-latest
-steps:
-- name: Update variable
-  shell: bash
-  run: |
+runs:
+  using: docker
+  image: ubuntu-latest
+  steps:
+  - name: Update variable
+    shell: bash
+    run: |
         curl -L 
              -X PATCH 
              -H "Accept: application/vnd.github+json"
