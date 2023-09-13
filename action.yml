@@ -7,9 +7,21 @@ inputs:
   newvalue:
     description: The new value of the repository variable.
     type: string
+  owner:
+    description: the owner of the repo
+    type: string  
+  repo:
+    description: the name of your repo
+    type: string
+  token:
+    description: a token to gain access to your repository variables
+    type: string
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.variable }}
     - ${{ inputs.newvalue }}
+    - ${{ inputs.owner }}
+    - ${{ inputs.repo }}
+    - ${{ inputs.token }}
