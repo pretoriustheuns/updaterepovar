@@ -11,4 +11,4 @@ echo "owner=$OWNER"
 echo "repo=$REPO"
 
 
-curl -L -X PATCH -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/$OWNER/$REPO/actions/variables/$VARIABLE -d '{"name":"$VARIABLE","value":"$NEWVALUE"}'
+curl -L -X PATCH -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $TOKEN" https://api.github.com/repos/$OWNER/$REPO/actions/variables/$VARIABLE -d "{\"name\":\"$VARIABLE\",\"value\":\"$NEWVALUE\"}"
