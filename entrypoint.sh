@@ -1,3 +1,4 @@
+#!/bin/sh -l
         curl -L \
              -X PATCH \
              -H "Accept: application/vnd.github+json" \
