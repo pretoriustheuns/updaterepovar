@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Test action
-        uses: pretoriustheuns/updaterepovar@399e89d197b1d150dc4414ec98e5c770c4f5c442
+        uses: pretoriustheuns/updaterepovar@5b25bb73f5836b9d9c12bcdc5ac30551f1022118
         with:
           variable: MASTER_BUILDNOTES_LAST_COMMITSHA
           newvalue: testingfromaction
