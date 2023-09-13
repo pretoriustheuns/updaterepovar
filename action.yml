@@ -8,7 +8,7 @@ inputs:
     description: The new value of the repository variable.
     type: string
 runs:
-  using: node16
+  using: ubuntu-latest
   steps:
   - name: Update variable
     shell: bash
