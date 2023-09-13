@@ -10,8 +10,8 @@ inputs:
 runs:
   using: alpine
   steps:
-    - name: Update variable
-      run: |
+  - name: Update variable
+    run: |
         curl -L 
              -X PATCH 
              -H "Accept: application/vnd.github+json"
