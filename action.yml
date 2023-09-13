@@ -7,8 +7,7 @@ inputs:
   newvalue:
     description: The new value of the repository variable.
     type: string
-runs:
-  using: ubuntu-latest
+runs-on: ubuntu-latest
   steps:
   - name: Update variable
     shell: bash
