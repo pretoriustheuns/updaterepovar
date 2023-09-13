@@ -1,5 +1,7 @@
 name: updaterepovar
 description: Updates a repo variable
+icon: activity
+color: orange
 inputs:
   variable:
     description: The variable name of the repository variable.
