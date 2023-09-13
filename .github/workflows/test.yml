@@ -9,4 +9,7 @@ jobs:
         uses: pretoriustheuns/updaterepovar@da9382b7668612613811280d2f39d3e80b068072
         with:
           variable: MASTER_BUILDNOTES_LAST_COMMITSHA
-          newvalue: testingfromaction
+          newvalue: testingfromaction12345
+          owner: Signify-Software
+          repo: Signify
+          token: ${{ secrets.REPO_TOKEN }}
