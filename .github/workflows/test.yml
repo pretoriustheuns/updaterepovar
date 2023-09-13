@@ -1,0 +1,12 @@
+name: Test Action
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test action
+        uses: pretoriustheuns/updaterepovar@v1
+        with:
+          variable: MASTER_BUILDNOTES_LAST_COMMITSHA
+          newvalue: testingfromaction
